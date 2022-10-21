@@ -1,0 +1,58 @@
+
+### Register
+POST localhost:8030/register
+Content-Type: application/json
+
+{
+  "name": "ss",
+  "password": "123456"
+}
+
+### Login
+POST localhost:8030/login
+Content-Type: application/json
+
+{
+  "name": "wf",
+  "password": "123456"
+}
+
+### checkLogin
+GET localhost:8030/login/check
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+### userList
+GET localhost:8030/user
+
+### getUserById
+GET localhost:8030/user/1
+
+### userInfo
+GET localhost:8030/user/info
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+### getFriends
+GET localhost:8030/user/getFriends
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+### searchFriend
+GET localhost:8030/user/searchUser?name=wf
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+### deleteFriend
+POST localhost:8030/user/deleteFriend
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+{
+  "uid": 4
+}
+
+### addFriend
+POST localhost:8030/user/addFriend
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjF9.-BD4QTkXkTn-i8TjhMj5f3VqrPE-RPPxK3Qx2jpwJhQ
+
+{
+  "uid": 4
+}

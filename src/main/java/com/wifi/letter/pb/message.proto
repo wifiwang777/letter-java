@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package message;
+
+option java_outer_classname = "WsMessage";
+option java_package = "com.wifi.letter.pb.proto";
+
+message Message {
+  uint32 from = 1;
+  uint32 to = 2;
+  uint32 type = 3;
+  string content = 4;
+}
