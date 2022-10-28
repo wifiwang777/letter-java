@@ -30,9 +30,6 @@ public class UserController {
     @Autowired
     private UserFriendService userFriendService;
 
-    @ApolloConfig
-    private Config config;
-
     @Autowired
     private JwtConfig jwtConfig;
 

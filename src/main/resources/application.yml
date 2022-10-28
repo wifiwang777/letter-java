@@ -15,7 +15,7 @@ spring:
       location:
 jwt:
   config:
-    key: wifi
+    key: letter
 
 custom:
   config:
