@@ -1,14 +1,10 @@
 package com.wifi.letter.websocket;
 
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.wifi.letter.api.mapper.MessagesMapper;
 import com.wifi.letter.api.model.Messages;
 import com.wifi.letter.api.service.MessagesService;
-import com.wifi.letter.api.service.impl.MessagesServiceImpl;
 import com.wifi.letter.pb.proto.WsMessage;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.websocket.*;
@@ -17,7 +13,6 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import java.util.Objects;
 
 @RestController
 @ServerEndpoint("/letter/ws/{uid}")
