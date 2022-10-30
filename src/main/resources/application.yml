@@ -25,3 +25,12 @@ custom:
         - "/register"
       get:
         - "/file/*"
+
+#apollo
+app:
+  id: letter
+
+apollo:
+  meta: http://localhost:8080
+  access-key:
+    secret: 0582299fcfd244f0bc24a2321addc872
