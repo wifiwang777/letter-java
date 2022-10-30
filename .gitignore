@@ -34,3 +34,4 @@ build/
 .mvn/
 
 src/main/resources/static/assets/file
+config-cache

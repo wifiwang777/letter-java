@@ -13,11 +13,11 @@ public class ResourceConfigurer implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         try {
-            String localPath = ResourceUtils.getURL("src/main/resources").getPath() + "static/assets/file/";
+            String localPath = ResourceUtils.getURL("classpath:").getPath() + "static/assets/file/";
+            System.out.println("localPath:" + localPath);
             registry.addResourceHandler("/file/**").addResourceLocations("file:" + localPath);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
-
 }
