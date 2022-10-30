@@ -13,8 +13,8 @@ public class LetterApplicationTests {
     }
 
     @Test
-    public void jwtTest(){
-        String res = Jwts.builder().claim("uid",1).signWith(SignatureAlgorithm.HS256,"wifi").compact();
+    public void jwtTest() {
+        String res = Jwts.builder().claim("uid", 1).signWith(SignatureAlgorithm.HS256, "letter").compact();
         System.out.println(res);
     }
 }
